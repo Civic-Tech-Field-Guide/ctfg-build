@@ -4,6 +4,7 @@
 // interactive bit is the CopyButton client island.
 import Link from "next/link";
 import { CopyButton } from "./CopyButton";
+import { ContactForm } from "./ContactForm";
 import { Hero, SectionHeading } from "../components/Hero";
 import { Button } from "../components/Button";
 import {
@@ -191,6 +192,22 @@ export default function DevelopersPage() {
             <p className="text-sm text-ink-soft leading-[1.55] max-w-[64ch]">The Field Guide data is free to use, re-use, adapt, and modify for non-commercial purposes, as long as you link back with attribution and share alike. Building something commercial? <Link href="https://civictech.guide/contact/" className="text-primary hover:underline">Talk to us.</Link></p>
           </div>
           <Button href="https://civictech.guide/guiding-principles/" variant="outlined" size="md">Read the terms</Button>
+        </div>
+      </section>
+
+      <hr className="divider" />
+
+      {/* CONTACT — "what are you building?" */}
+      <section
+        id="contact"
+        className="relative overflow-hidden topo py-[84px] px-10 bg-bg-alt [background-image:radial-gradient(60%_120%_at_10%_0%,rgba(135,125,255,.3),transparent_55%),radial-gradient(70%_130%_at_92%_6%,rgba(103,245,194,.34),transparent_55%)]"
+      >
+        <div className="relative z-[1]">
+          <SectionHeading
+            title="Let us know what you're building with it?"
+            sub="Tell us what you're making with the Field Guide — we love to feature new builds and can often help you go further."
+          />
+          <ContactForm />
         </div>
       </section>
     </>
