@@ -1,6 +1,6 @@
-# ctfg-build
+# CTFG Directory
 
-The developer landing site for the [Civic Tech Field Guide](https://civictech.guide) — a static Next.js app documenting how to build on the world's largest curated civic tech dataset.
+Staging site for the next generation version of the CTFG's flagship search and explore app.
 
 ## Three ways to access the data
 
