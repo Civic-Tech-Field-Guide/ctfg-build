@@ -57,7 +57,7 @@ curl "https://civictech.guide/api/v1/projects/search?q=participatory+budgeting&l
 
 Apps already running on the dataset:
 
-- **[CTFG Directory](https://civictech.guide)** — the flagship search and explore app
+- **[CTFG Directory](https://civictech.guide/directory)** — search and explore the full dataset
 - **[CTFG PilotCity Mashup](https://luxury-syrniki-bfc3ca.netlify.app)** — Field Guide data blended with PilotCity for project-based learning
 - **[CTFG Taxonomy Recommender](https://github.com/mstem/guidefinder)** — suggests categories and tags for any project using the directory's taxonomy
 
