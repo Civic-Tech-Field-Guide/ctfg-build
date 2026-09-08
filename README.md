@@ -4,17 +4,12 @@ Staging site for the next generation version of the CTFG's flagship search and e
 
 ## Three ways to access the data
 
-> **API host:** the directory API is currently served from
-> `https://staging-directory.civictech.guide` during infrastructure migration.
-> It moves to `https://directory.civictech.guide` at DNS cutover — update the base
-> URL below accordingly.
-
 ### MCP server
 
 A hosted, read-only MCP server is live over **Streamable HTTP** (no API key):
 
 ```
-POST https://staging-directory.civictech.guide/api/mcp
+POST https://civictech.guide/mcp
 ```
 
 Tools: `search_projects`, `get_project`, `list_categories`.
@@ -22,7 +17,7 @@ Tools: `search_projects`, `get_project`, `list_categories`.
 Connect from Claude Code:
 
 ```bash
-claude mcp add --transport http civictech-guide https://staging-directory.civictech.guide/api/mcp
+claude mcp add --transport http civictech-guide https://civictech.guide/mcp
 ```
 
 From Claude Desktop / Cursor / any config-file client (bridge stdio → HTTP with `mcp-remote`; a native `@civictechguide/mcp` package is coming soon):
@@ -31,7 +26,7 @@ From Claude Desktop / Cursor / any config-file client (bridge stdio → HTTP wit
 "mcpServers": {
   "civictech-guide": {
     "command": "npx",
-    "args": ["-y", "mcp-remote", "https://staging-directory.civictech.guide/api/mcp"]
+    "args": ["-y", "mcp-remote", "https://civictech.guide/mcp"]
   }
 }
 ```
@@ -44,7 +39,7 @@ Once connected, your assistant can search listings, pull project detail, and tra
 
 ### REST API
 
-Clean JSON over HTTPS. No key required for public reads. Base: `https://staging-directory.civictech.guide`
+Clean JSON over HTTPS. No key required for public reads. Base: `https://civictech.guide`
 
 | Method | Endpoint | Description |
 |---|---|---|
@@ -55,14 +50,14 @@ Clean JSON over HTTPS. No key required for public reads. Base: `https://staging-
 | GET | `/api/v1/facets` | Filter option values |
 
 ```bash
-curl "https://staging-directory.civictech.guide/api/v1/projects/search?q=participatory+budgeting&limit=5"
+curl "https://civictech.guide/api/v1/projects/search?q=participatory+budgeting&limit=5"
 ```
 
 ### Showcase
 
 Apps already running on the dataset:
 
-- **[CTFG Directory](https://staging-directory.civictech.guide)** — the flagship search and explore app
+- **[CTFG Directory](https://civictech.guide)** — the flagship search and explore app
 - **[CTFG PilotCity Mashup](https://luxury-syrniki-bfc3ca.netlify.app)** — Field Guide data blended with PilotCity for project-based learning
 - **[CTFG Taxonomy Recommender](https://github.com/mstem/guidefinder)** — suggests categories and tags for any project using the directory's taxonomy
 
