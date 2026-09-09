@@ -39,7 +39,7 @@ const ENDPOINTS = [
 const SHOWCASE = [
   { kind: "Reference app", title: "CTFG Directory", desc: "Search and explore thousands of curated civic-tech projects — our own flagship app, built on the dataset.", Icon: Grid, href: API_BASE, flagship: true },
   { kind: "Mashup", title: "CTFG PilotCity Mashup", desc: "Blends the Field Guide dataset with PilotCity to connect civic tech with project-based learning.", Icon: Sparkles, href: "https://luxury-syrniki-bfc3ca.netlify.app" },
-  { kind: "Recommendation engine", title: "CTFG Taxonomy Recommender", desc: "Suggests the right Field Guide categories and tags for any project, powered by the directory's taxonomy.", Icon: Database, href: "https://github.com/mstem/guidefinder" },
+  { kind: "Recommendation engine", title: "CTFG Taxonomy Recommender", desc: "Suggests the right Field Guide categories and tags for any project, powered by the directory's taxonomy.", Icon: Database, href: "https://github.com/Civic-Tech-Field-Guide/ctfg-guidefinder" },
 ];
 const TINTS = ["#574FD9", "#01B583", "#877DFF"];
 

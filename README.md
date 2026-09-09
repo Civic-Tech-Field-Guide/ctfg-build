@@ -59,7 +59,7 @@ Apps already running on the dataset:
 
 - **[CTFG Directory](https://civictech.guide/directory)** — search and explore the full dataset
 - **[CTFG PilotCity Mashup](https://luxury-syrniki-bfc3ca.netlify.app)** — Field Guide data blended with PilotCity for project-based learning
-- **[CTFG Taxonomy Recommender](https://github.com/mstem/guidefinder)** — suggests categories and tags for any project using the directory's taxonomy
+- **[CTFG Taxonomy Recommender](https://github.com/Civic-Tech-Field-Guide/ctfg-guidefinder)** — suggests categories and tags for any project using the directory's taxonomy
 
 ## Code & examples
 
